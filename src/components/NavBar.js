@@ -7,11 +7,47 @@ const NavBar = () => {
   return(
     <Container fluid className='NavBar'>
       <Menu>
+
         <NavLink to='/home' exact>
           <Menu.Item name='home'>
             <Icon name='home' />Home
           </Menu.Item>
         </NavLink>
+
+        <NavLink to='/rsvp' exact>
+          <Menu.Item name='rsvp'>
+            <Icon name='check' />RSVP
+          </Menu.Item>
+        </NavLink>
+
+        <NavLink to='/maps' exact>
+          <Menu.Item name='maps'>
+            <Icon name='map signs' />Maps
+          </Menu.Item>
+        </NavLink>
+
+        <NavLink to='/schedule' exact>
+          <Menu.Item name='schedule'>
+            <Icon name='clock' />Schedule
+          </Menu.Item>
+        </NavLink>
+
+        <NavLink to='/accommodation' exact>
+          <Menu.Item name='Accommodation'>
+            <Icon name='hotel' />Accommodation
+          </Menu.Item>
+        </NavLink>
+
+        <NavLink to='/contact' exact>
+          <Menu.Item name='contact'>
+            <Icon name='address card outline' />Contact
+          </Menu.Item>
+        </NavLink>
+
+
+
+
+
       </Menu>
     </Container>
   )

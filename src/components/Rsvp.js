@@ -1,14 +1,14 @@
 import React from 'react'
 import { Container } from 'semantic-ui-react'
 
-class Contact extends React.Component {
+class Rsvp extends React.Component {
 
 
   render() {
     return(
-      <Container className='contact' />
+      <Container className='rsvp' />
     )
   }
 }
 
-export default Contact
+export default Rsvp
