@@ -11,7 +11,9 @@ import Footer from './components/Footer'
 import Maps from './components/Maps'
 import Rsvp from './components/Rsvp'
 import Schedule from './components/Schedule'
-import Accommodation from './components/Accommodation'
+import Lodging from './components/Lodging'
+import Registry from './components/Registry'
+import Info from './components/Info'
 
 class App extends Component {
   render() {
@@ -38,12 +40,20 @@ class App extends Component {
           <Rsvp />
         )} />
 
-        <Route exact path='/accommodation' render={(props) => (
-          <Accommodation />
+        <Route exact path='/lodging' render={(props) => (
+          <Lodging />
         )} />
 
         <Route exact path='/schedule' render={(props) => (
           <Schedule />
+        )} />
+
+        <Route exact path='/registry' render={(props) => (
+          <Registry />
+        )} />
+
+        <Route exact path='/info' render={(props) => (
+          <Info />
         )} />
 
       </div>

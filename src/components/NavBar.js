@@ -14,6 +14,12 @@ const NavBar = () => {
           </Menu.Item>
         </NavLink>
 
+        <NavLink to='/info' exact>
+          <Menu.Item name='info'>
+            <Icon name='info' />Info
+          </Menu.Item>
+        </NavLink>
+
         <NavLink to='/rsvp' exact>
           <Menu.Item name='rsvp'>
             <Icon name='check' />RSVP
@@ -32,9 +38,15 @@ const NavBar = () => {
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/accommodation' exact>
-          <Menu.Item name='Accommodation'>
-            <Icon name='hotel' />Accommodation
+        <NavLink to='/lodging' exact>
+          <Menu.Item name='lodging'>
+            <Icon name='hotel' />Lodging
+          </Menu.Item>
+        </NavLink>
+
+        <NavLink to='/registry' exact>
+          <Menu.Item name='registry'>
+            <Icon name='gift' />Registry
           </Menu.Item>
         </NavLink>
 
@@ -43,10 +55,6 @@ const NavBar = () => {
             <Icon name='address card outline' />Contact
           </Menu.Item>
         </NavLink>
-
-
-
-
 
       </Menu>
     </Container>
