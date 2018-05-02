@@ -9,7 +9,7 @@ class Contact extends React.Component {
       <Container className='contact'>
         <Header size='large'>Contact</Header>
         <p>Please do not hesitate to reach out to us with any questions or concerns regarding preparations for or your attendance at our special day.</p>
-        <p>General Email: ____</p>
+        <p>General Email: william.b.dana@gmail.com / lzhang917@gmail.com</p>
         <p>Maid of Honor (Steph Shapiro): ____</p>
       </Container>
     )
