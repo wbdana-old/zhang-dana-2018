@@ -6,7 +6,7 @@ const NavBar = () => {
 
   return(
     <Container fluid className='NavBar'>
-      <Menu>
+      <Menu stackable>
 
         <NavLink to='/home' exact>
           <Menu.Item name='home'>
