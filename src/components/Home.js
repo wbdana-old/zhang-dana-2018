@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, Header } from 'semantic-ui-react'
+import React from 'react';
+import { Container, Header } from 'semantic-ui-react';
 
 const Home = () => {
 
@@ -11,6 +11,6 @@ const Home = () => {
       
     </Container>
   )
-}
+};
 
-export default Home
+export default Home;

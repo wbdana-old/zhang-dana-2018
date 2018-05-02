@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, Header } from 'semantic-ui-react'
+import React from 'react';
+import { Container, Header } from 'semantic-ui-react';
 
 class Lodging extends React.Component {
 
@@ -13,6 +13,6 @@ class Lodging extends React.Component {
       </Container>
     )
   }
-}
+};
 
-export default Lodging
+export default Lodging;

@@ -1,7 +1,8 @@
-import React from 'react'
-import { Container, Header } from 'semantic-ui-react'
+import React from 'react';
+import { Container, Header } from 'semantic-ui-react';
 
 class Rsvp extends React.Component {
+  
 
 
   render() {
@@ -13,6 +14,6 @@ class Rsvp extends React.Component {
       </Container>
     )
   }
-}
+};
 
-export default Rsvp
+export default Rsvp;
