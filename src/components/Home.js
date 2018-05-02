@@ -5,7 +5,10 @@ const Home = () => {
 
   return(
     <Container className='home'>
+      <br /><br />
+
       <Header size='large'>Welcome the Wedding website</Header>
+      
     </Container>
   )
 }
