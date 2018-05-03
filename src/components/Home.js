@@ -7,8 +7,6 @@ const Home = () => {
   function dayCounter() {
     var wedding = new Date("October 06, 2018 16:00:00");
     var now = new Date();
-    console.log(wedding);
-    console.log(now);
     return(Math.round((wedding - now) / (1000 * 60 * 60 * 24)).toString());
   };
 

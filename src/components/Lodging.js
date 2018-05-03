@@ -3,20 +3,20 @@ import { Container, Header, Card } from 'semantic-ui-react';
 import Hotel from './Hotel';
 
 const Lodging = () => {
-  
+
   let hotels = [
     {
       name: "The Roxbury Motel",
       address: "2258 Co Rd 41, Roxbury, NY 12474",
       number: "(607) 326-7200",
-      link: "www.theroxburymotel.com",
+      link: "http://www.theroxburymotel.com",
       email: "info@theroxburymotel.com"
     },
     {
       name: "Margaretville Mountain Inn",
       address: "1478 Margaretville Mountain Rd, Margaretville, NY 12455",
       number: "(845) 586-3933",
-      link: "www.margaretvilleinn.com",
+      link: "http://www.margaretvilleinn.com",
       email: "margaretvilleinn@gmail.com"
     },
     {
@@ -30,7 +30,7 @@ const Lodging = () => {
       name: "Breezy Hill Inn",
       address: "835 Breezy Hill Rd, Fleischmanns, NY 12430",
       number: "(845) 254-5615",
-      link: "www.breezyhillinn.com",
+      link: "http://www.breezyhillinn.com",
       email: "info@breezyhillinn.com"
     },
     {
@@ -44,14 +44,14 @@ const Lodging = () => {
       name: "The Colonial Motel",
       address: "37283 State Highway 23, Grand Gorge, NY 12434",
       number: "(607) 588-6122",
-      link: "www.colonialmotel.biz",
-      email: "",
+      link: "http://www.colonialmotel.biz",
+      email: "info@colonialmotel.biz",
     },
     {
       name: "Queens Mountain Inn",
       address: "53470 New York 30, Roxbury, NY 12474",
       number: "(917) 304-8053",
-      link: "www.queensmtninn.com",
+      link: "http://www.queensmtninn.com",
       email: "info@queensmtninn.com"
     },
     {
@@ -65,7 +65,7 @@ const Lodging = () => {
       name: "Scudder Hill House",
       address: "24 County Hwy 8, Roxbury, NY 12474",
       number: "(607) 3226-7310",
-      link: "www.scudderhillhouse.com",
+      link: "http://www.scudderhillhouse.com",
       email: "scudderhillhouse@gmail.com"
     }
   ];
