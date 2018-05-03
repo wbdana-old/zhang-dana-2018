@@ -8,7 +8,7 @@ const NavBar = () => {
     <Container fluid id='NavBar'>
       <Menu inverted stackable>
 
-        <NavLink to='/home' exact className='navbaritem'>
+        <NavLink to='/' exact className='navbaritem'>
           <Menu.Item name='home'>
             <Icon name='home' className='navbaritem' />Home
           </Menu.Item>

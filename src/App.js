@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom';
 
 // Components
 import Home from './components/Home';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
-// import Footer from './components/Footer';
 import Maps from './components/Maps';
 import Rsvp from './components/Rsvp';
 import Schedule from './components/Schedule';
@@ -19,13 +18,10 @@ class App extends Component {
     return (
       <div className="App">
 
-        {/* <Route path='/' render={(props) => (
-          <NavBar />
-        )} /> */}
         <NavBar />
 
-        <Route path='/' render={(props) => (
-          <Redirect to='/home' />
+        <Route exact path='/' render={(props) => (
+          <Home />
         )} />
 
         <Route exact path='/home' render={(props) => (
@@ -59,8 +55,6 @@ class App extends Component {
         <Route exact path='/info' render={(props) => (
           <Info />
         )} />
-      
-        {/* <Footer /> */}
 
       </div>
     );
