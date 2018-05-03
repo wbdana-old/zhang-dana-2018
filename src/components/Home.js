@@ -15,8 +15,8 @@ const Home = () => {
       <Container className='home'>
         <br />
         <Header size='huge'>Linda & Will</Header>
-        <Header size='medium'>October 6, 2018 | Roxbury, NY</Header>
-        <Header size='medium'>{dayCounter()} days to go!</Header>
+        <Header size='medium'>October 6, 2018 | Roxbury, NY | {dayCounter()} days to go!</Header>
+        {/* <Header size='medium'>{dayCounter()} days to go!</Header> */}
       </Container>
       <Image id='homeImage' src={engagement} size='massive' centered />      
     </div>
