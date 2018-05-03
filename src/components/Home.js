@@ -13,14 +13,14 @@ const Home = () => {
   };
 
   return(
-    <div>      
+    <div className='homeDiv'>      
       <Container className='home'>
-        <br /><br />
-        <Header size='large'>Linda & Will</Header>
+        <br />
+        <Header size='huge'>Linda & Will</Header>
         <Header size='medium'>October 6, 2018 | Roxbury, NY</Header>
         <Header size='medium'>{dayCounter()} days to go!</Header>
-        <Image src={engagement} size='massive' centered />
       </Container>
+      <Image id='homeImage' src={engagement} size='massive' centered />      
     </div>
   )
 };

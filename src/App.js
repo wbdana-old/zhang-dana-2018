@@ -6,7 +6,7 @@ import { Route, Redirect } from 'react-router-dom'
 import Home from './components/Home';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Maps from './components/Maps';
 import Rsvp from './components/Rsvp';
 import Schedule from './components/Schedule';
@@ -60,7 +60,7 @@ class App extends Component {
           <Info />
         )} />
       
-        <Footer />
+        {/* <Footer /> */}
 
       </div>
     );

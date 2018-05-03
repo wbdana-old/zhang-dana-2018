@@ -5,54 +5,54 @@ import { NavLink }  from 'react-router-dom'
 const NavBar = () => {
 
   return(
-    <Container fluid className='NavBar'>
-      <Menu stackable>
+    <Container fluid id='NavBar'>
+      <Menu inverted stackable>
 
-        <NavLink to='/home' exact>
+        <NavLink to='/home' exact className='navbaritem'>
           <Menu.Item name='home'>
-            <Icon name='home' />Home
+            <Icon name='home' className='navbaritem' />Home
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/info' exact>
-          <Menu.Item name='info'>
-            <Icon name='info' />Info
+        <NavLink to='/info' exact className='navbaritem'>
+          <Menu.Item name='info' className='navbaritem'>
+            <Icon name='info' className='navbaritem' />Info
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/rsvp' exact>
-          <Menu.Item name='rsvp'>
-            <Icon name='check' />RSVP
+        <NavLink to='/rsvp' exact className='navbaritem'>
+          <Menu.Item name='rsvp' className='navbaritem'>
+            <Icon name='check' className='navbaritem' />RSVP
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/maps' exact>
-          <Menu.Item name='maps'>
-            <Icon name='map signs' />Maps
+        <NavLink to='/maps' exact className='navbaritem'>
+          <Menu.Item name='maps' className='navbaritem'>
+            <Icon name='map signs' className='navbaritem' />Maps
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/schedule' exact>
-          <Menu.Item name='schedule'>
-            <Icon name='clock' />Schedule
+        <NavLink to='/schedule' exact className='navbaritem'>
+          <Menu.Item name='schedule' className='navbaritem'>
+            <Icon name='clock' className='navbaritem' />Schedule
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/lodging' exact>
-          <Menu.Item name='lodging'>
-            <Icon name='hotel' />Lodging
+        <NavLink to='/lodging' exact className='navbaritem'>
+          <Menu.Item name='lodging' className='navbaritem'>
+            <Icon name='hotel' className='navbaritem' />Lodging
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/registry' exact>
-          <Menu.Item name='registry'>
-            <Icon name='gift' />Registry
+        <NavLink to='/registry' exact className='navbaritem'>
+          <Menu.Item name='registry' className='navbaritem'>
+            <Icon name='gift' className='navbaritem' />Registry
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/contact' exact>
-          <Menu.Item name='contact'>
-            <Icon name='address card outline' />Contact
+        <NavLink to='/contact' exact className='navbaritem'>
+          <Menu.Item name='contact' className='navbaritem'>
+            <Icon name='address card outline' className='navbaritem' />Contact
           </Menu.Item>
         </NavLink>
 
