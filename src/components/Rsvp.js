@@ -2,8 +2,6 @@ import React from 'react';
 import { Container, Header } from 'semantic-ui-react';
 
 class Rsvp extends React.Component {
-  
-
 
   render() {
     return(

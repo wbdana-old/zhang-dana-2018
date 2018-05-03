@@ -1,15 +1,27 @@
 import React from 'react';
-import { Container, Header } from 'semantic-ui-react';
+import { Container, Header, Image } from 'semantic-ui-react';
+import engagement from '../assets/engagement-photo.jpeg';
 
 const Home = () => {
 
-  return(
-    <Container className='home'>
-      <br /><br />
+  function dayCounter() {
+    var wedding = new Date("October 06, 2018 16:00:00");
+    var now = new Date();
+    console.log(wedding);
+    console.log(now);
+    return(Math.round((wedding - now) / (1000 * 60 * 60 * 24)).toString());
+  };
 
-      <Header size='large'>Welcome the Wedding website</Header>
-      
-    </Container>
+  return(
+    <div>      
+      <Container className='home'>
+        <br /><br />
+        <Header size='large'>Linda & Will</Header>
+        <Header size='medium'>October 6, 2018 | Roxbury, NY</Header>
+        <Header size='medium'>{dayCounter()} days to go!</Header>
+        <Image src={engagement} size='massive' centered />
+      </Container>
+    </div>
   )
 };
 
