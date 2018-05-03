@@ -7,10 +7,19 @@
   width: 100%;
 }
 
-.homediv {
-
+:not(.navbaritem) {
+  background-color: #F6F5ED;
 }
 
-:not(.navbaritem) {
-  background-color: #F9F8F3;
+.hotel-card, .hotel-card * {
+  background-color: rgb(156, 241, 58) !important;
+}
+
+.left-button {
+  float: left;
+}
+
+.right-button {
+  float: right;
+  margin-right: 0 !important;
 }

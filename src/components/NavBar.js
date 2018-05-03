@@ -14,9 +14,9 @@ const NavBar = () => {
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/info' exact className='navbaritem'>
-          <Menu.Item name='info' className='navbaritem'>
-            <Icon name='info' className='navbaritem' />Info
+        <NavLink to='/schedule' exact className='navbaritem'>
+          <Menu.Item name='schedule' className='navbaritem'>
+            <Icon name='clock' className='navbaritem' />Schedule
           </Menu.Item>
         </NavLink>
 
@@ -32,11 +32,6 @@ const NavBar = () => {
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/schedule' exact className='navbaritem'>
-          <Menu.Item name='schedule' className='navbaritem'>
-            <Icon name='clock' className='navbaritem' />Schedule
-          </Menu.Item>
-        </NavLink>
 
         <NavLink to='/lodging' exact className='navbaritem'>
           <Menu.Item name='lodging' className='navbaritem'>
