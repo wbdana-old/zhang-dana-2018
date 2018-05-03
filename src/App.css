@@ -11,8 +11,8 @@
   background-color: #F6F5ED;
 }
 
-.hotel-card, .hotel-card * {
-  background-color: rgb(156, 241, 58) !important;
+.hotel-card {
+  background-color: rgb(143, 116, 179) !important;
 }
 
 .left-button {

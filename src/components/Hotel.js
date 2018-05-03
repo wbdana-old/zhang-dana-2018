@@ -7,7 +7,7 @@ const Hotel = (props) => {
             <Card.Content className='hotel-card'>
                 <Card.Header className='hotel-card'>
                     <Header size='small' className='hotel-card'>
-                        <Icon name='hotel' size='mini' />{props.hotel.name}
+                        <Icon name='hotel' size='mini' className='hotel-card' />{props.hotel.name}
                     </Header>
                 </Card.Header>
                 <Card.Meta className='hotel-card'>
@@ -18,14 +18,12 @@ const Hotel = (props) => {
                 </Card.Description>
             </Card.Content>
             <Card.Content extra className='hotel-card'>
-                <div className='ui two buttons'>
-                    <a href={props.hotel.link} target='_blank' rel="noopener noreferrer" className='hotel-card'>
-                        <Button basic color='white' className='left-button'>Visit Website</Button>
-                    </a>
-                    <a href={props.hotel.email} className='hotel-card'>
-                        <Button basic color='red' className='right-button'>Email</Button>
-                    </a>
-                </div>
+                <a href={props.hotel.link} target='_blank' rel="noopener noreferrer" className='hotel-card'>
+                    <Button inverted color='black' className='left-button'>Visit Website</Button>
+                </a>
+                <a href={`mailto:${props.hotel.email}`} className='hotel-card'>
+                    <Button inverted color='grey' className='right-button'>Email</Button>
+                </a>
             </Card.Content>
         </Card>
     )
