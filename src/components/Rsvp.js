@@ -36,8 +36,8 @@ class Rsvp extends React.Component {
       },
       body: JSON.stringify(this.state)
     }
-    fetch("http://127.0.0.1:5000/rsvp", options)
-    // fetch("https://zhang-dana-api.herokuapp.com/rsvp", options)
+    // fetch("http://127.0.0.1:5000/rsvp", options)
+    fetch("https://zhang-dana-api.herokuapp.com/rsvp", options)
       .then(resp => this.responseHandler(resp.status))
   };
 
