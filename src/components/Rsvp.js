@@ -63,8 +63,8 @@ class Rsvp extends React.Component {
         },
         body: JSON.stringify(this.state.rsvp)
       }
-      fetch("http://127.0.0.1:5000/rsvp", options)
-      // fetch("https://zhang-dana-api.herokuapp.com/rsvp", options)
+      // fetch("http://127.0.0.1:5000/rsvp", options)
+      fetch("https://zhang-dana-api.herokuapp.com/rsvp", options)
       .then(resp => this.responseHandler(resp.status));
     } else {
       this.setState({
@@ -169,7 +169,7 @@ class Rsvp extends React.Component {
         {this.state.message.showMessage && <Message dismissMessage={this.dismissMessage} message={this.state.message} />}
         <br /><br />
         <Header size='huge'>RSVP</Header>
-        <p><strong>Please use this form once per guest, with a <i>unique email</i> for each guest.<br />If you are updating your RSVP, please ensure that you use the same email address that you used in your initial RSVP.</strong><br /><br />If you have any trouble at all, please do not hesitate to <a href="mailto:william.b.dana@gmail.com">contact Will</a> for assistance.</p>
+        <p><strong>Please use this form once per guest, with a <i>unique email</i> for each guest.<br />If you are updating your RSVP, please ensure that you use the same email address that you used in your initial RSVP.</strong><br />Because our wedding is at home, and we have limited space, please <a href="mailto:william.b.dana@gmail.com">contact us</a> if you would like to bring a +1 and have not already spoken with us about doing so.<br /><br />If you have any trouble at all, please do not hesitate to <a href="mailto:william.b.dana@gmail.com">contact Will</a> for assistance.</p>
         <Form id='rsvp' className='rsvp-form'>
           <Form.Input label='Name' type='name' placeholder='Name' onChange={this.onChange} value={this.state.rsvp.name} />
           <Form.Input label='Email' type='email' placeholder='Email Address' onChange={this.onChange} value={this.state.rsvp.email} />
