@@ -36,14 +36,14 @@ class Rsvp extends React.Component {
           ...this.state.rsvp,
           [data.name]: "True"
         }
-      })
+      }, () => {console.log(this.state.rsvp)})
     : this.setState({
         ...this.state,
         rsvp: {
           ...this.state.rsvp,
           [data.name]: "False"
         }
-      });
+      }, () => {console.log(this.state.rsvp)});
   };
 
   validateEmail = (email) => {
@@ -54,6 +54,7 @@ class Rsvp extends React.Component {
 
   onSubmit = (event, data) => {
     if (this.validateEmail(this.state.rsvp.email)) {
+      console.log(this.state.rsvp)
       const options = {
         "method": "POST",
         "headers": {
@@ -62,8 +63,8 @@ class Rsvp extends React.Component {
         },
         body: JSON.stringify(this.state.rsvp)
       }
-      // fetch("http://127.0.0.1:5000/rsvp", options)
-      fetch("https://zhang-dana-api.herokuapp.com/rsvp", options)
+      fetch("http://127.0.0.1:5000/rsvp", options)
+      // fetch("https://zhang-dana-api.herokuapp.com/rsvp", options)
       .then(resp => this.responseHandler(resp.status));
     } else {
       this.setState({
@@ -144,6 +145,24 @@ class Rsvp extends React.Component {
     })
   }
 
+  rehearsalCheckbox = () => {
+    return this.state.rsvp.rehearsal === "True"
+    ? true
+    : false
+  }
+
+  weddingCheckbox = () => {
+    return this.state.rsvp.wedding === "True"
+    ? true
+    : false
+  }
+
+  brunchCheckbox = () => {
+    return this.state.rsvp.brunch === "True"
+    ? true
+    : false
+  }
+
   render() {
     return(
       <Container className='rsvp'>
@@ -154,9 +173,9 @@ class Rsvp extends React.Component {
         <Form id='rsvp' className='rsvp-form'>
           <Form.Input label='Name' type='name' placeholder='Name' onChange={this.onChange} value={this.state.rsvp.name} />
           <Form.Input label='Email' type='email' placeholder='Email Address' onChange={this.onChange} value={this.state.rsvp.email} />
-          <Form.Checkbox label='I plan to attend the Rehearsal Dinner -- TO COME' type='checkbox' name='rehearsal' onChange={this.onCheckboxClick} disabled />
-          <Form.Checkbox label='I plan to attend the Wedding Ceremony and Reception' type='checkbox' name='wedding' onChange={this.onCheckboxClick} />
-          <Form.Checkbox label='I plan to attend the Sunday Brunch' type='checkbox' name='brunch' onChange={this.onCheckboxClick} />
+          <Form.Checkbox label='I plan to attend the Rehearsal Dinner -- TO COME' type='checkbox' name='rehearsal' onChange={this.onCheckboxClick} disabled checked={this.rehearsalCheckbox()} />
+          <Form.Checkbox label='I plan to attend the Wedding Ceremony and Reception' type='checkbox' name='wedding' onChange={this.onCheckboxClick} checked={this.weddingCheckbox()}/>
+          <Form.Checkbox label='I plan to attend the Sunday Brunch' type='checkbox' name='brunch' onChange={this.onCheckboxClick} checked={this.brunchCheckbox()} />
         </Form>
         <br />
         <Button onClick={this.onSubmit} size='large' color='black'>RSVP</Button>
