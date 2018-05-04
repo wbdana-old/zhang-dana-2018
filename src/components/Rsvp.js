@@ -26,6 +26,8 @@ class Rsvp extends React.Component {
       });
   };
 
+  // Needs to become a find and update or create by NAME list
+  // Check if 
   onSubmit = (event, data) => {
     console.log(this.state);
     const options = {
@@ -57,7 +59,8 @@ class Rsvp extends React.Component {
     return(
       <Container className='rsvp'>
         <br /><br />
-        <Header size='large'>RSVP</Header>        
+        <Header size='large'>RSVP</Header>
+        <p>Please use this form once per guest.<br /><u>If you are updating your RSVP, please ensure that you use the same email address as used in your initial RSVP, as your email address is used as your unique identifier and for wedding-related updates.</u><br />If you have any trouble at all, please do not hesitate to <a href="mailto:william.b.dana@gmail.com">contact Will</a> for assistance.</p>
         <Form id='rsvp' className='rsvp-form'>
           <Form.Input label='Name' type='name' placeholder='Name' onChange={this.onChange} />
           <Form.Input label='Email' type='email' placeholder='Email Address' onChange={this.onChange} />
@@ -66,7 +69,7 @@ class Rsvp extends React.Component {
           <Form.Checkbox label='I plan to attend the Sunday Brunch' type='checkbox' name='brunch' onChange={this.onCheckboxClick} />
         </Form>
         <br />
-        <Button onClick={this.onSubmit} size='huge' color='red'>RSVP</Button>
+        <Button onClick={this.onSubmit} size='huge' color='red'>RSVP (or Update RSVP)</Button>
       </Container>
     )
   }
