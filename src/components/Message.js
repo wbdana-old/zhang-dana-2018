@@ -6,10 +6,10 @@ const Message = (props) => {
 
     return(
         <Card id='message-card'>
-            <Card.Header><strong>{props.message.messageHeader}</strong></Card.Header>
-            <Card.Description>{props.message.messageContent}</Card.Description>
+            <Card.Header id='message-header'><strong>{props.message.messageHeader}</strong></Card.Header>
+            <Card.Description id='message-description'>{props.message.messageContent}</Card.Description>
             <Card.Content extra>
-                <Button onClick={props.dismissMessage}>Dismiss</Button>
+                <Button inverted color='grey' onClick={props.dismissMessage}>Dismiss</Button>
             </Card.Content>
         </Card>
     )

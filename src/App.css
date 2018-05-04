@@ -36,11 +36,13 @@
 
 #message-card {
   position: fixed;
-  /* margin-left: 50%;
-  margin-right: 50%;
-  margin-top: 50%; */
   top: 29%;
   left: 40%;
   z-index: 1;
-  /* background-color: red !important; */
+  background-color: rgb(32, 0, 90) !important;
+}
+
+#message-header, #message-header *, #message-description, #message-description * {
+  color: white !important;
+  background-color: rgb(32, 0, 90) !important;
 }
