@@ -67,6 +67,13 @@ const Lodging = () => {
       number: "(607) 3226-7310",
       link: "http://www.scudderhillhouse.com",
       email: "scudderhillhouse@gmail.com"
+    },
+    {
+      name: "Pine Hollow Lodging",
+      address: "Margaretville, NY 12455",
+      number: "(845) 586-1433",
+      link: "http://www.pinehollowlodging.com/",
+      email: "http://www.pinehollowlodging.com/inquiry-form.html"
     }
   ];
 

@@ -2,6 +2,17 @@ import React from 'react';
 import { Icon, Card, Header, Button } from 'semantic-ui-react';
 
 const Hotel = (props) => {
+
+    function inquiryOrEmail() {
+        return props.hotel.name === "Pine Hollow Lodging"
+        ? (<a href={props.hotel.email} target='_blank' rel="noopener noreferrer" className='hotel-card'>
+            <Button className='right-button'>Email</Button>
+           </a>)
+        : (<a href={`mailto:${props.hotel.email}`} className='hotel-card'>
+            <Button className='right-button'>Email</Button>
+           </a>)
+    }
+
     return(
         <Card fluid className='hotel-card'>
             <Card.Content className='hotel-card'>
@@ -21,9 +32,7 @@ const Hotel = (props) => {
                 <a href={props.hotel.link} target='_blank' rel="noopener noreferrer" className='hotel-card'>
                     <Button className='left-button'>Visit Website</Button>
                 </a>
-                <a href={`mailto:${props.hotel.email}`} className='hotel-card'>
-                    <Button className='right-button'>Email</Button>
-                </a>
+                {inquiryOrEmail()}
             </Card.Content>
         </Card>
     )
