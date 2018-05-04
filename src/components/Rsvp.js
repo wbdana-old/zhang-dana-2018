@@ -26,8 +26,6 @@ class Rsvp extends React.Component {
       });
   };
 
-  // Needs to become a find and update or create by NAME list
-  // Check if 
   onSubmit = (event, data) => {
     console.log(this.state);
     const options = {
