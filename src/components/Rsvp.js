@@ -173,12 +173,12 @@ class Rsvp extends React.Component {
         <Form id='rsvp' className='rsvp-form'>
           <Form.Input label='Name' type='name' placeholder='Name' onChange={this.onChange} value={this.state.rsvp.name} />
           <Form.Input label='Email' type='email' placeholder='Email Address' onChange={this.onChange} value={this.state.rsvp.email} />
-          <Form.Checkbox label='I plan to attend the Rehearsal Dinner -- TO COME' type='checkbox' name='rehearsal' onChange={this.onCheckboxClick} disabled checked={this.rehearsalCheckbox()} />
+          {/* <Form.Checkbox label='I plan to attend the Rehearsal Dinner -- TO COME' type='checkbox' name='rehearsal' onChange={this.onCheckboxClick} disabled checked={this.rehearsalCheckbox()} /> */}
           <Form.Checkbox label='I plan to attend the Wedding Ceremony and Reception' type='checkbox' name='wedding' onChange={this.onCheckboxClick} checked={this.weddingCheckbox()}/>
           <Form.Checkbox label='I plan to attend the Sunday Brunch' type='checkbox' name='brunch' onChange={this.onCheckboxClick} checked={this.brunchCheckbox()} />
         </Form>
         <br />
-        <Button onClick={this.onSubmit} size='large' color='black'>RSVP</Button>
+        <Button inverted onClick={this.onSubmit} size='large' id="rsvp-button">RSVP</Button>
       </Container>
     )
   }
