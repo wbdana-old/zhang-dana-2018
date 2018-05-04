@@ -19,10 +19,10 @@ const Hotel = (props) => {
             </Card.Content>
             <Card.Content extra className='hotel-card'>
                 <a href={props.hotel.link} target='_blank' rel="noopener noreferrer" className='hotel-card'>
-                    <Button inverted color='black' className='left-button'>Visit Website</Button>
+                    <Button className='left-button'>Visit Website</Button>
                 </a>
                 <a href={`mailto:${props.hotel.email}`} className='hotel-card'>
-                    <Button inverted color='grey' className='right-button'>Email</Button>
+                    <Button className='right-button'>Email</Button>
                 </a>
             </Card.Content>
         </Card>

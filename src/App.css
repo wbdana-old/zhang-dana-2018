@@ -11,8 +11,13 @@
   background-color: #F6F5ED;
 }
 
-.hotel-card {
-  background-color: rgb(143, 116, 179) !important;
+.hotel-card, a.hotel-card {
+  /* background-color: rgb(136, 27, 8) !important; */
+  /* background-color: rgb(24, 133, 33) !important; */
+  /* background-color: rgb(0, 90, 44) !important; */
+  background-color: #F6F5ED !important;
+  /* color: rgb(43, 41, 41) !important; */
+  color: rgb(0, 90, 44) !important;
 }
 
 .left-button {
@@ -22,4 +27,9 @@
 .right-button {
   float: right;
   margin-right: 0 !important;
+}
+
+.ui.large.header, .ui.medium.header, .ui.huge.header {
+  color: rgb(0, 90, 44) !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
