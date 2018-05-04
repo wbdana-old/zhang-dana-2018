@@ -33,3 +33,14 @@
   color: rgb(0, 90, 44) !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
+
+#message-card {
+  position: fixed;
+  /* margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 50%; */
+  top: 29%;
+  left: 40%;
+  z-index: 1;
+  /* background-color: red !important; */
+}

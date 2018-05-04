@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 // Components
 import Home from './components/Home';

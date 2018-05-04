@@ -75,7 +75,7 @@ const Lodging = () => {
     <Container className='lodging'>
       <br /><br />
 
-      <Header size='large'>Lodging and Accommodation</Header>
+      <Header size='huge'>Lodging and Accommodation</Header>
       <Card.Group itemsPerRow={3} doubling>
         {hotels.map( (hotel, id) => {
           return <Hotel hotel={hotel} key={id} />
