@@ -54,7 +54,7 @@ class Rsvp extends React.Component {
 
   onSubmit = (event, data) => {
     this.setState({
-      ...state,
+      ...this.state,
       rsvp: {
         ...this.state.rsvp,
         email: this.state.rsvp.email.toLowerCase()
