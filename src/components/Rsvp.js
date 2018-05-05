@@ -181,7 +181,7 @@ class Rsvp extends React.Component {
         {this.state.message.showMessage && <Message dismissMessage={this.dismissMessage} message={this.state.message} />}
         <br /><br />
         <Header size='huge'>RSVP</Header>
-        <p><strong>Please use this form once per guest, with a <i>unique email</i> for each guest.<br />
+        <p><strong>Please use this form once per guest (including +1s), with a <i>unique email</i> for each guest.<br />
         If you are updating your RSVP, please ensure that you use the same email address that you used in your initial RSVP.<br />
         Because our wedding is at home and we have limited space, please <a href="mailto:william.b.dana@gmail.com">contact Will</a> or <a href="mailto:lzhang917@gmail.com">Linda</a> if you would like to bring a +1 and have not already spoken with us about doing so.<br />
         Please have +1s RSVP individually here so we can keep a close eye on who's coming. Thank you! &lt;3</strong><br /><br />If you have any trouble at all, please do not hesitate to <a href="mailto:william.b.dana@gmail.com">contact Will</a> for assistance.</p>
