@@ -39,11 +39,11 @@ const NavBar = () => {
           </Menu.Item>
         </NavLink>
 
-        <NavLink to='/registry' exact className='navbaritem'>
+        <a href='https://www.zola.com/registry/lindawill' target='_blank' rel="noopener noreferrer" className='navbaritem'>
           <Menu.Item name='registry' className='navbaritem'>
             <Icon name='gift' className='navbaritem' />Registry
           </Menu.Item>
-        </NavLink>
+        </a>
 
         <NavLink to='/contact' exact className='navbaritem'>
           <Menu.Item name='contact' className='navbaritem'>

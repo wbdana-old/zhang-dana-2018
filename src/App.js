@@ -10,7 +10,6 @@ import Maps from './components/Maps';
 import Rsvp from './components/Rsvp';
 import Schedule from './components/Schedule';
 import Lodging from './components/Lodging';
-import Registry from './components/Registry';
 import Info from './components/Info';
 
 class App extends Component {
@@ -46,10 +45,6 @@ class App extends Component {
 
         <Route exact path='/schedule' render={(props) => (
           <Schedule />
-        )} />
-
-        <Route exact path='/registry' render={(props) => (
-          <Registry />
         )} />
 
         <Route exact path='/info' render={(props) => (
