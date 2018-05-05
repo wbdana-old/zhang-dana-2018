@@ -53,6 +53,18 @@ class Rsvp extends React.Component {
   }
 
   onSubmit = (event, data) => {
+    this.setState({
+      ...state,
+      rsvp: {
+        ...this.state.rsvp,
+        email: this.state.rsvp.email.toLowerCase()
+      }
+    }, () => {
+      this.postRsvp();
+    })
+  };
+
+  postRsvp = () => {
     if (this.validateEmail(this.state.rsvp.email)) {
       console.log(this.state.rsvp)
       const options = {
