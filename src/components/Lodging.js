@@ -83,6 +83,8 @@ const Lodging = () => {
       <br /><br />
 
       <Header size='huge'>Lodging and Accommodation</Header>
+      <p>Options below not cutting it? Check out the <a href="https://static1.squarespace.com/static/55d7c248e4b081e9ffd3d8da/t/590f83a486e6c025ede5d47d/1494188989869/The+Roxbury+Barn+-+Lodging+List+2017" target='_blank' rel="noopener noreferrer">Roxbury Barn & Estate Lodging List</a>!</p>
+
       <p>If you would like to rent a house for the weekend, please see some options at <a href="https://www.homeaway.com/results/new-york/roxbury/region:6021/keywords:Roxbury%2C+NY%2C+USA/arrival:2018-10-05/departure:2018-10-08" target='_blank' rel="noopener noreferrer">HomeAway</a> or <a href="https://www.vrbo.com/vacation-rentals/usa/new-york/catskills/roxbury" target='_blank' rel="noopener noreferrer">VRBO</a>. In a pinch (though we do not recommend it), you could also try <a href="https://www.airbnb.com/s/Roxbury--NY--United-States/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJUQFIlctC3IkR3lhDcZDKsEM&query=Roxbury%2C%20NY%2C%20United%20States&allow_override%5B%5D=&s_tag=Z4E_ln5K" target='_blank' rel="noopener noreferrer">AirBnB</a>.<br />
       Otherwise, please check out some hotels and motels below.</p>
       <Card.Group itemsPerRow={3} doubling>
