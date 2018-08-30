@@ -25,6 +25,11 @@ export default class RsvpList extends React.Component {
       });
   };
 
+  boldTruth = (bool) => {
+    return bool === true ?
+      <strong>{String(bool)}</strong> :
+      {String(bool)}
+  };
 
   render() {
     let
@@ -45,7 +50,7 @@ export default class RsvpList extends React.Component {
       if (this.state.rsvps[i].brunch === true) {
         brunchCount++;
       }
-    }
+    };
 
     return (
       <Container className='rsvp-list'>
@@ -76,13 +81,13 @@ export default class RsvpList extends React.Component {
                           Email: {String(guest.email)}
                         </List.Item>
                         <List.Item>
-                          Rehearsal: {String(guest.rehearsal)}
+                          Rehearsal: {this.boldTruth(guest.rehearsal)}
                         </List.Item>
                         <List.Item>
-                          Wedding: {String(guest.wedding)}
+                          Wedding: {this.boldTruth(guest.wedding)}
                         </List.Item>
                         <List.Item>
-                          Brunch: {String(guest.brunch)}
+                          Brunch: {this.boldTruth(guest.brunch)}
                         </List.Item>
                       </List.List>
                     </List.Content>
