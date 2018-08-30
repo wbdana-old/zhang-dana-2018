@@ -11,6 +11,7 @@ import Rsvp from './components/Rsvp';
 import Schedule from './components/Schedule';
 import Lodging from './components/Lodging';
 import Info from './components/Info';
+import RsvpList from './components/RsvpList';
 
 class App extends Component {
   render() {
@@ -49,6 +50,10 @@ class App extends Component {
 
         <Route exact path='/info' render={(props) => (
           <Info />
+        )} />
+
+        <Route exact path='/rsvp-list' render={(props) => (
+          <RsvpList />
         )} />
 
       </div>
