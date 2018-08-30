@@ -28,7 +28,7 @@ export default class RsvpList extends React.Component {
   boldTruth = (bool) => {
     return bool === true ?
       <strong>{String(bool)}</strong> :
-      {String(bool)}
+      String(bool)
   };
 
   render() {
