@@ -16,7 +16,7 @@ const Home = () => {
         <br />
         <Header size='huge'>Linda & Will</Header>
         <Header size='medium'>October 6, 2018 | Roxbury, NY | {dayCounter()} days to go!</Header>
-        {/* <Header size='medium'>{dayCounter()} days to go!</Header> */}
+        <Header size='medium'>Ceremony (10/6) 2:00 p.m., Sunday Brunch (10/7) 11:00 a.m.</Header>
       </Container>
       <Image id='homeImage' src={engagement} size='massive' centered />      
     </div>
